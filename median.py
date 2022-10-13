@@ -1,6 +1,7 @@
 import math
 
 def median(numbers):
+    numbers = sorted(numbers)
     length = len(numbers)
     midpoint = math.floor(length / 2)
     return (length == 1 and numbers[0]) or (length % 2 == 0 and (numbers[midpoint - 1] + numbers[midpoint]) / 2) or numbers[midpoint]
